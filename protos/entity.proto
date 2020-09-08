@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package entity;
+
+message User {
+  string username = 1;
+}
+
+message Profile {
+  string username = 1;
+  repeated string followers = 2;
+  repeated string following = 3;
+}
+
+message MapProtoBuff {
+  map<string, bytes> map = 1;
+}
